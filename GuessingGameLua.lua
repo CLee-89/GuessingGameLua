@@ -57,10 +57,12 @@ end
 -- main function/game loop
 math.randomseed(os.time())
 local isRunning = 'y'
+local MAX_NUM = 100
 
 while isRunning == 'y' do
 
-    IsGuessing(math.random(100))
+    IsGuessing(math.random(MAX_NUM))
     isRunning = PlayAgain()
+
 
 end
